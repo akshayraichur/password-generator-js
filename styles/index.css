@@ -46,6 +46,7 @@ body {
   padding: 1rem;
   margin: 2rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 4px solid var(--seconndary-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

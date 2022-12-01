@@ -1,75 +1,8 @@
+import { chars } from './constants.js';
+
 const displayPassword = document.querySelector('.password');
 const passwordLenElm = document.querySelector('.password-length');
 const copyBtn = document.querySelector('.copy-btn');
-
-const chars = [
-  'a',
-  'b',
-  'c',
-  'd',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'm',
-  'n',
-  'o',
-  'p',
-  'q',
-  'r',
-  's',
-  't',
-  'u',
-  'v',
-  'w',
-  'x',
-  'y',
-  'z',
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-  'W',
-  'X',
-  'Y',
-  'Z',
-  '@',
-  '#',
-  '$',
-  '%',
-  '=',
-  ':',
-  '?',
-  '.',
-  '/',
-  '|',
-  '~',
-  '>',
-  '*',
-  '(',
-  ')',
-  '<',
-];
 
 let PASSWORD_LENGTH = 16;
 
@@ -87,7 +20,7 @@ const generatePassword = () => {
 
 const updateDOM = (len = PASSWORD_LENGTH) => {
   PASSWORD_LENGTH = len;
-  password = generatePassword();
+  let password = generatePassword();
   passwordLenElm.textContent = `Password length: ${PASSWORD_LENGTH}`;
   displayPassword.textContent = password;
 };
