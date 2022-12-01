@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator App</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1>🔐 Generate secure passwords</h1>
+        <h3 class="subtitle">.....that nobody can guess</h3>
+
+        <div class="password-container">
+          <h2 class="password" contenteditable="true" spellcheck="false">
+            akshay raichur
+          </h2>
+          <div class="btn-container">
+            <button class="icon-style" title="Copy">
+              <i class="fa-regular fa-copy copy-btn"></i>
+            </button>
+            <button class="icon-style" title="Refresh">
+              <i class="fa-solid fa-arrow-rotate-right refresh-btn"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="customize-password-container">
+          <h3 class="container-title">🔑 Personalize your password</h3>
+          <p class="password-length">Password length: 16</p>
+          <input type="range" min="12" max="20" step="1" class="range-input" />
+        </div>
+
+        <div class="tooltip"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This project is built by Akshay Raichur,
+        <span><a href="https://github.com/akshayraichur">checkout</a></span> for
+        more
+      </p>
+    </footer>
+  </body>
+</html>

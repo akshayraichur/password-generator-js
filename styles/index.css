@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #48cae4;
+  --seconndary-color: #76c893;
+  --text-color: #14213d;
+  --bg-color: #ffffff;
+  --bg-backdrop: #eeeeee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  height: 90vh;
+}
+
+.container h1 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.subtitle {
+  text-align: end;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--seconndary-color);
+}
+
+.password-container {
+  border-radius: 10px;
+  background-color: var(--bg-backdrop);
+  padding: 1rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--seconndary-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.customize-password-container {
+  border-radius: 10px;
+  background-color: var(--bg-backdrop);
+  padding: 1rem;
+  margin: 2rem 0;
+  border-bottom: 4px solid var(--seconndary-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.password {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.icon-style {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.fa-solid {
+  transition: 1s all ease;
+}
+
+.container-title {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+input[type='range'] {
+  cursor: pointer;
+  width: 50%;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  color: var(--seconndary-color);
+  background: inherit;
+  border-radius: 5px;
+  height: 7px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--seconndary-color);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .icon-style {
+    font-size: 1.2rem;
+  }
+
+  .password {
+    font-size: 1.2rem;
+  }
+
+  input[type='range'] {
+    width: 100%;
+  }
+}
